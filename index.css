@@ -7,7 +7,7 @@ header{
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
     color: #FFFFFF;
-    width: 1400px;
+    width: 1450px;
     height: 130px;
     margin-top: 30px;
 }
@@ -15,13 +15,14 @@ header{
 width: 70px;
 height: 40px;
 margin-top: 10px;
-margin-left: 20px;
+margin-left: 10px;
 }
 .heading-title{
 text-align: center;
-font-size: 45px;
+font-size: 40px;
 color: #0B0223;
 }
+
 
 nav{
     display: flex;
@@ -57,6 +58,7 @@ nav  li a{
     padding: 30px;
     margin: 30px;
 }
+
 
 .like-title{
 color: #0B0223;
@@ -109,6 +111,12 @@ gap: 10px;
 }
 
 /* gamer section start here */
+
+.gamer-container :hover{
+    cursor: pointer;
+    color: #FF42A5;
+}
+
 .gamer-container{
     display: flex;
     align-items: center;
@@ -262,6 +270,11 @@ margin-bottom: 200px;
 }
 
 /* main part er bottom section */
+.gamesall-container:hover{
+    cursor: pointer;
+    color: rgb(255, 0, 140);
+    background-color: firebrick;
+}
 .gamesall-container{
     margin-top: 220px;
     width: 1380px;
@@ -313,10 +326,10 @@ line-height: normal;
 }
 
 .footer-container{
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: center; */
     width: 1400px;
     height: 500px;
     background: #0B0223;
@@ -328,10 +341,12 @@ line-height: normal;
    justify-content: center;
    gap: 10px;
    margin-bottom: 200px;
+   margin-left: 500px;
    
 }
 .heading-title{
     text-align: center;
+    margin-right: 800px;
 }
 .amer{
 color: #FFF;
@@ -341,7 +356,8 @@ font-style: normal;
 font-weight: 700;
 line-height: normal;
 }
-.story-text{
+
+.footer-card{
 color: #FFF;
 text-align: center;
 font-family: Work Sans;
@@ -349,49 +365,51 @@ font-size: 18px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
-justify-content: center;
-align-items: center;
-flex-direction: row;
 display: flex;
+align-items: center;
+justify-content: center;
+margin-left: 20px;
+margin-bottom: 20px;
 }
- .story-card{
-    
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: row;
-    display: flex;
-}
-.story-text h5{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    text-decoration: none;
-    flex-direction: row;
-    margin-right: 100px;
-    margin-bottom: 100px;
-    
-}
+
 .footer-icon{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    display: flex;
-}
-.footer-img{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    display: flex;
-    width: 20px;
-    height: 20px;
     color: #FFFFFF;
-    margin-right: 100px;
+    margin-top: 40px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    flex-shrink: 0;
+    gap: 60px;
+    margin-bottom: 40px;
     
-
+}
+.footer-text{
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.footer-ends{
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
+@media screen and (max-width: 576px) {
+   header,ul,.header-img{
+    flex-direction: column;
+   }
+   .goat-container,.gamer-container,.funny-text,.funnyvideo-container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column;
+   }
 
-
-
+}
